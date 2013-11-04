@@ -18,7 +18,8 @@ Platforms = generate_platforms(NUM_NODES,times);
 
 
 % establish initial topology if required
-com_net=init_net(NUM_NODES);
+net_categ = 'broadcast';
+com_net = init_net(NUM_NODES,net_categ);
 
 % in every case, the sensors which sit on the platforms are defined
 % this is because the filters may change between runs
