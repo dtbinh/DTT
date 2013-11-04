@@ -7,7 +7,7 @@ function network = init_net(nsize,net_categ)
 network=zeros(nsize,nsize);
 
 switch net_categ
-    case 'fully connected'
+    case 'broadcast'
         network = ones(nsize,nsize);
         for i = 1:nsize
             network(i,i) = 0;
